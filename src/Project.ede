@@ -1,0 +1,14 @@
+;; Object Blackforth
+;; EDE project file.
+(ede-proj-project "Blackforth"
+  :name "Blackforth"
+  :file "Project.ede"
+  :targets (list 
+   (ede-proj-target-makefile-program "Win"
+    :name "Win"
+    :path ""
+    :source '("blackforth.c")
+    :auxsource '("platform.h")
+    )
+   )
+  )
